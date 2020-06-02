@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+p:first-child {
+  color: blue;
+}
+
+p:first-child i {
+  color: blue;
+}
+/*div:hover {
+  background-color: blue;
+}*/
+
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p{
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<p>Mouse over the div element below to change its background color:</p>
+
+<div>Mouse Over Me
+<p>Mouse over the div element below to change its background color:</p>
+</div>
+
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+
+</body>
+</html>
