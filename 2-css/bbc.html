@@ -10,18 +10,13 @@
         <meta name="description" content="A clone from BBC news Technology: https://www.bbc.com/news/technology ">
     
         <style type="text/css">
-                div#top-bar{
+                #top-bar{
                     width: 1200px;
                     margin:0 auto;
                     height: 40px;
                     
                 }
-                #menu-bar-container{
-                    margin:0;
-                    background: red;
-                    height: 100px;
-                    
-                }
+
                 body{
                     margin: 0;
                     padding: 0;
@@ -87,16 +82,90 @@
                 clear: both;
             }
 
-            #header-title{
-                color: white;
-                width: 1200px;
-                margin:0 auto;
-                height: 40px;
+                #menu-bar-container{
+                    border-top: 1px solid #cccccc;
+                    margin:0;
+                    background: #bb1919;
+                    height: 70px;
+                    width:100%;
 
-            }
+                }
 
-           
-            
+                #menu-bar{
+                    color: white;
+                    width: 1200px;
+                    margin:0 auto;
+                }
+                h1{
+                    padding-top: 10px;
+                    margin: auto;
+                    font-size: 40px;
+                    font-weight: normal;
+                    float: left;
+                    vertical-align: middle;
+                }
+
+                #menu-bar-2-container{
+                    background-color: #A91717;
+
+                }
+
+                #menu-bar-2{
+                    width: 1200px;
+                    margin: 0 auto;
+                    padding: 0;
+                    height: 40px;
+
+                }
+
+                #menu-bar-2 a{
+                    color: white;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    border-right: 1px solid #bb4545 ;
+                    position: relative;
+                    top: 8px;
+                    font-size: 20px;
+                    float: left;
+                }
+
+                #menu-bar-2 a:hover{
+                    text-decoration: underline;
+                }
+
+                .no-border{
+                    border: none !important;
+                }
+
+                #down-arrow{
+                    height: 20px;
+                    position: relative;
+                    top:10px
+                }
+
+                #page-container{
+                    width: 1200px;
+                    margin: 0 auto;
+
+                }
+
+                h2{
+                    font-weight: normal;
+                    margin-top: 40px;
+                    font-size: 20px;
+                    border-bottom: 4px solid #A91717;
+                    width: 50px;
+
+                }
+
+                #main-article{
+                    width: 505px;
+                    height: 595px;
+                }
+
+
+
+
         </style>
     
     </head>
@@ -135,13 +204,41 @@
         </div>
         <div class="clear"></div>
         <div id="menu-bar-container">
-           <div id="header-title">
-               NEWS
+           <div id="menu-bar">
+               <h1>NEWS</h1>
            </div>
+            <div class="clear"></div>
+            <div id="menu-bar-2-container">
+                <div id="menu-bar-2">
+                    <a href="">Home</a>
+                    <a href="">Coronavirus</a>
+                    <a href="">video</a>
+                    <a href="">World</a>
+                    <a href="">UK</a>
+                    <a href="">Business</a>
+                    <a href="">Tech</a>
+                    <a href="">Science</a>
+                    <a href="">stories</a>
+                    <a href="" class="no-border">More</a>
+                    <img  id="down-arrow" src="images/down-arrow.PNG">
+                </div>
+            </div>
+
+
 
 
             
         </div>
+
+        <div class="clear"></div>
+        <div id="page-container">
+            <div id="main-article">
+                <h2>Tech</h2>
+                
+
+            </div>
+        </div>
+
         
     
     </body>
