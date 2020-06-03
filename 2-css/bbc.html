@@ -140,13 +140,12 @@
                 #down-arrow{
                     height: 20px;
                     position: relative;
-                    top:10px
+                    top:10px;
                 }
 
                 #page-container{
-                    width: 1200px;
+                    width: 1300px;
                     margin: 0 auto;
-
                 }
 
                 h2{
@@ -161,9 +160,97 @@
                 #main-article{
                     width: 505px;
                     height: 595px;
+                    float: left;
                 }
 
+                h3 a{
+                    color: black;
+                    font-size: 30px;
+                    text-decoration: none;
+                }
 
+                h3 a:hover{
+                    color: #1380A1;
+                    text-decoration: underline;
+                }
+
+                #article-summary{
+                    color: darkgray;
+                    width:505px;
+                    height: 590px;
+                    float: left;
+                }
+
+                #article-summary img{
+                    position: relative;
+                    top: 5px;
+
+                }
+
+                #article-summary a{
+                    text-decoration: none;
+                    color: #5a5a5a;
+                    border-left: 1px solid #cccccc;
+                    padding-left: 5px;
+
+
+                }
+
+                .date{
+                    padding-right: 5px;
+                }
+
+                #article-summary a:hover, h4 a:hover{
+                    color: #1380A1;
+                    text-decoration: underline;
+
+
+                }
+
+                p{
+                    margin-top: 0;
+                    padding: 0;
+                    color: darkgray;
+                }
+
+                h4 a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                #assides-articles{
+                    width: 800px;
+                    height: 590px;
+                    position: relative;
+                    float: left;
+                    left: 505px;
+                    top:-505px
+                }
+
+                #assides-articles ul{
+                    padding: 5px;
+                }
+
+                #assides-articles li{
+                    list-style-type: none;
+                    display: inline-block;
+                    width: 250px;
+                    height: 280px;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    top:-17px;
+                }
+
+                #section-2{
+                    position: relative;
+                    top: -420px;
+                }
+
+                #article-container{
+                    float: left;
+                    width: 520px;
+                }
 
 
         </style>
@@ -234,10 +321,62 @@
         <div id="page-container">
             <div id="main-article">
                 <h2>Tech</h2>
-                
+
+                <div id="article-container">
+                    <div id="article-summary">
+                        <img src="images/zuckerbarg.PNG" height="289px" width="504">
+                        <h3><a href="https://www.bbc.co.uk/news/technology-52877801"> Zuckerberg accused of setting
+                            dangerous precedent</a></h3>
+                        <p> civil rights chiefs say the are "disappointed and stunned by Mark's incomprehensible
+                            explanations"</p>
+                        <p><img src="images/clock.png" alt="clock"> <span id="date">02 June 2020 </span><a
+                                href="https://www.bbc.com/news/technology">Technology</a></p>
+                        <ul>
+                            <li><h4><a href="">Facebook staff anger over Trump post</a></h4></li>
+                            <li><h4><a href="">Tweet hides Trump tweet for 'glorifying violence'</a></h4></li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
+            <div id="assides-articles">
+                <ul>
+                    <li>
+                        <div id="asside1">
+                            <img src="images/android-article.PNG"> <h4><a href="https://www.bbc.com/news/technology-52891650">Why is bricking some Android phones</a></h4>
+                            <p> civil rights chiefs say the are "disappointed and stunned by Mark's incomprehensible explanations"</p>
+                            <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="asside2"><img src="images/huawei5g.PNG"> <h4><a href="https://www.bbc.com/news/technology-52894147">Senator tells MPs Huawei puts US troops at risk</a></h4>
+                        <p>Senator Tom Cotton also claimed tha the US, UK and their allies could make superior 5G tech</p>
+                        <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div>
+                    </li>
+                    <li>
+                        <div id="asside3"><img src="images/indianapp.PNG"> <h4><a href="https://www.bbc.com/news/technology-52892796">Indian app hunts out Chinese software on phones</a></h4>
+                        <p> Remove China Apps was developed by an Indian firm, amid rising tension between the two nations.</p>
+                        <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div>
+                    </li>
+                    <li><div id="asside4"><img src="images/protestdelayplaystation.PNG"> <h4><a href="https://www.bbc.com/news/technology-52877792">Protests delay PlayStation and Call of Duty events</a></h4>
+                        <p> Civil unrest in the US has also caused Google to delay showing off the next version of Android.</p>
+                        <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div></li>
+                    <li><div id="asside5"><img src="images/twittersuspends.PNG"> <h4><a href="https://www.bbc.com/news/technology-52891149">Twitter suspends hundreds over #DCBlackout hoax</a></h4>
+                        <p> A "blackout" that never happened and a fake "left-wing" account are among those banned.</p>
+                        <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div></li>
+                    <li><div id="asside6"><img src="images/ethnicityfilter.PNG"> <h4><a href="https://www.bbc.com/news/technology-52886167">Grindr removes 'ethnicity filter' after complaints</a></h4>
+                        <p> The LGBT app says it has a "zero-tolerance policy for racism" and will remove the filter.</p>
+                        <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div id="section-2">
+                <h1>AAA</h1>
+            </div>
+            
         </div>
+
+
 
         
     
