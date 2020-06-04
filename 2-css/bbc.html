@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A clone from BBC news Technology: https://www.bbc.com/news/technology ">
-    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <style type="text/css">
                 #top-bar{
                     width: 1200px;
@@ -242,15 +242,100 @@
                     top:-17px;
                 }
 
-                #section-2{
-                    position: relative;
-                    top: -420px;
-                }
-
                 #article-container{
                     float: left;
                     width: 520px;
                 }
+
+
+                .section-2{
+                    position: relative;
+                    top: -420px;
+                    width: 1300px;
+                    border-bottom: 1.2px solid #cccccc;
+                }
+
+                .section-2 img{
+                    width: 220px;
+                }
+
+                .section-2 li{
+                    list-style-type: none;
+                    display: inline-block;
+                    width: 235px;
+                    height: 210px;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                }
+
+                h5{
+                    font-size: medium;
+                    padding: 0 0 0 0;
+                    margin: 10px 0 0 0;
+                }
+
+                #arround-bbc{
+                    position: relative;
+                    top: -420px;
+                    width: 1300px;
+                }
+
+                #arround-main{
+                    color: darkgray;
+                    width:505px;
+                    float: left;
+                }
+
+                #footer{
+                    float: bottom;
+                    background: #4C4C4C;
+                    height: 300px;
+                    border-top: 1px solid white;
+
+
+                }
+
+                #footer1{
+
+                    float: bottom;
+                    background: #2F2F2F repeat-x;
+                    height: 120px;
+
+                }
+
+                #footer1-content{
+                    width: 1400px;
+                    margin: 0 auto;
+                }
+
+                #footer1-content h5{
+                    color: white;
+                    font-size: xx-large;
+                    padding-top: 15px;
+                }
+
+                #footer1-content li{
+                    list-style-type: none;
+                    display: inline-block;
+                    width: 270px;
+                    margin-right: 60px;
+                }
+
+                #footer1-content li a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+                #footer1-content li a:hover{
+                    text-decoration: underline;
+                }
+
+                #footer1-content i{
+                    color: white;
+                }
+
+
 
 
         </style>
@@ -342,39 +427,176 @@
             <div id="assides-articles">
                 <ul>
                     <li>
-                        <div id="asside1">
+                        <div>
                             <img src="images/android-article.PNG"> <h4><a href="https://www.bbc.com/news/technology-52891650">Why is bricking some Android phones</a></h4>
                             <p> civil rights chiefs say the are "disappointed and stunned by Mark's incomprehensible explanations"</p>
                             <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p>
                         </div>
                     </li>
                     <li>
-                        <div id="asside2"><img src="images/huawei5g.PNG"> <h4><a href="https://www.bbc.com/news/technology-52894147">Senator tells MPs Huawei puts US troops at risk</a></h4>
+                        <div ><img src="images/huawei5g.PNG"> <h4><a href="https://www.bbc.com/news/technology-52894147">Senator tells MPs Huawei puts US troops at risk</a></h4>
                         <p>Senator Tom Cotton also claimed tha the US, UK and their allies could make superior 5G tech</p>
                         <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div>
                     </li>
                     <li>
-                        <div id="asside3"><img src="images/indianapp.PNG"> <h4><a href="https://www.bbc.com/news/technology-52892796">Indian app hunts out Chinese software on phones</a></h4>
+                        <div ><img src="images/indianapp.PNG"> <h4><a href="https://www.bbc.com/news/technology-52892796">Indian app hunts out Chinese software on phones</a></h4>
                         <p> Remove China Apps was developed by an Indian firm, amid rising tension between the two nations.</p>
                         <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div>
                     </li>
-                    <li><div id="asside4"><img src="images/protestdelayplaystation.PNG"> <h4><a href="https://www.bbc.com/news/technology-52877792">Protests delay PlayStation and Call of Duty events</a></h4>
+                    <li><div><img src="images/protestdelayplaystation.PNG"> <h4><a href="https://www.bbc.com/news/technology-52877792">Protests delay PlayStation and Call of Duty events</a></h4>
                         <p> Civil unrest in the US has also caused Google to delay showing off the next version of Android.</p>
                         <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div></li>
-                    <li><div id="asside5"><img src="images/twittersuspends.PNG"> <h4><a href="https://www.bbc.com/news/technology-52891149">Twitter suspends hundreds over #DCBlackout hoax</a></h4>
+                    <li><div ><img src="images/twittersuspends.PNG"> <h4><a href="https://www.bbc.com/news/technology-52891149">Twitter suspends hundreds over #DCBlackout hoax</a></h4>
                         <p> A "blackout" that never happened and a fake "left-wing" account are among those banned.</p>
                         <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div></li>
-                    <li><div id="asside6"><img src="images/ethnicityfilter.PNG"> <h4><a href="https://www.bbc.com/news/technology-52886167">Grindr removes 'ethnicity filter' after complaints</a></h4>
+                    <li><div ><img src="images/ethnicityfilter.PNG"> <h4><a href="https://www.bbc.com/news/technology-52886167">Grindr removes 'ethnicity filter' after complaints</a></h4>
                         <p> The LGBT app says it has a "zero-tolerance policy for racism" and will remove the filter.</p>
                         <p><img src="images/clock.png" alt="clock"> <span class="date">02 June 2020 </span><a href="https://www.bbc.com/news/technology">Technology</a></p></div></li>
                 </ul>
             </div>
             <div class="clear"></div>
-            <div id="section-2">
-                <h1>AAA</h1>
+            <div class="section-2">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="images/google.png"></img>
+                            <h4><a href="https://www.bbc.com/news/business-52887340">Google in $5bn lawsuit for tracking in 'private' mode</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/spying.png"></img>
+                            <h4><a href="https://www.bbc.com/news/technology-52833547">Working from home? your boss maybe spying you</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/okbeebe.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/technology-52891155">OK BEEÇ BBC Voice assistant comes with accents</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/anonymous.png"></img>
+                            <h4><a href="https://www.bbc.com/news/technology-52879000">The Return of the Anonymous hacker collective</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/athiestactivities.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/world-africa-52620433?intlink_from_url=https://www.bbc.com/news/technology&link_location=live-reporting-story">The atheist activists who get death threats</a></h4>
+
+                        </div>
+                    </li>
+                </ul>
             </div>
-            
+            <div class="clear"></div>
+            <div class="section-2">
+                <h5>Watch/listen</h5>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="images/virtualPub.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/technology-52833546">‘Why I recreated my local pub in virtual reality’</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/astronautCapsule.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/science-environment-52870429">Watch: Astronaut capsule docks with space station</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/RaspberryPi.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/technology-52891155">Coming soon AAAAAAAAAAAAAA</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/lockdownApps.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/technology-52879000">Comming soon AAAAAAAAAAAAAA</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/droneDrops.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/world-africa-52620433?intlink_from_url=https://www.bbc.com/news/technology&link_location=live-reporting-story">Comming soon AAAAAAAAAAAAAA</a></h4>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="section-2">
+                <h5>Features & Analysis</h5>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="images/zoom.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/business-52830257">What's it like to be laid off over Zoom?</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/asiaFishermen.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/business-52767227">Watch: Astronaut capsule docks with space station</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/zoomboo.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/business-52884782">Zoom sees sales boom amid pandemic</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/usb5g.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/technology-52810220">Trading Standards squad targets anti-5G USB stick</a></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/litlelights.PNG"></img>
+                            <h4><a href="https://www.bbc.com/news/business-52535125">The little lights now packing a deadly punch</a></h4>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div id="arround-bbc">
+                <div id="arround-main">
+                    <img src="images/naturalLazy.PNG">
+                </div>
+                <div id="arround-asside"></div>
+
+            </div>
         </div>
+        <div class="clear"></div>
+        <div id="footer1">
+            <div id="footer1-content">
+                <h5>BBC News Services</h5>
+                <ul>
+                    <li>
+                        <a href="https://www.bbc.co.uk/news/10628994"><i class="material-icons">smartphone</i> On your mobile</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bbc.co.uk/news/help-50068132"> <i class="material-icons">campaign</i> On smart speakers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bbc.co.uk/news/10628323"> <i class="material-icons">add_alert</i> Get news alerts </a>
+                    </li>
+                    <li>
+                        <a href="https://www.bbc.co.uk/news/20039682"><i class="material-icons">email</i>Contact BBC News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+
 
 
 
