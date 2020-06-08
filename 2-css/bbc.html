@@ -14,7 +14,6 @@
                     width: 1200px;
                     margin:0 auto;
                     height: 40px;
-                    
                 }
 
                 body{
@@ -363,10 +362,67 @@
                     color: white;
                 }
 
+                #find-us{
+                    position: relative;
+                    top: -420px;
+                    width: 1300px;
+
+
+                }
+
+                #social-media{
+                    width:506px;
+                    height: 137px;
+                    float:left;
+                    border-right: 2px solid #cccccc;
+                }
+
+                #social-media ul, #others ul, #adress{
+                    list-style-type: none;
+
+                }
+
+                #social-media li{
+                    width: 88px;
+                    height: 88px;
+                    display: inline-block;
+                }
+
+                #social-media a#insta:hover{
+                    background: deeppink;
+                }
+
+                #social-media a#twitter:hover, a#fb:hover{
+                    background: cyan;
+                }
+
+
+                #others li{
+                    width: 253px;
+                    height: 112px;
+                    display: inline-block;
+                }
+
+                #adress li{
+                    height: 36px;
+                }
+
+                #others a{
+                    text-decoration: none;
+                    color: #2F2F2F;
+                }
+
+                #others a:hover{
+                    text-decoration: underline;
+                    color: #1380A1;
+                }
+
+
 
 
 
         </style>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     
     </head>
 
@@ -643,7 +699,49 @@
 
             </div>
             <div class="clear"></div>
-            
+            <div id="find-us">
+                <h5>Find US</h5>
+                <div id="social-media">
+                    <ul>
+                        <li>
+                            <a id="twitter" href="https://twitter.com/BBCWorld"><img src="images/twiter.PNG" alt="Twitter Logo"></a>
+                        </li>
+                        <li>
+                            <a id="fb" href="https://www.facebook.com/bbcnews"><img src="images/fb.PNG" alt="fb Logo"></a>
+                        </li>
+                            <li><a id="insta" href="https://www.instagram.com/bbcnews"><img src="images/insta.PNG" alt="Insta Logo"></a></li>
+
+                    </ul>
+
+                </div>
+                <div id="others">
+                    <ul>
+                        <li style="margin-top: -30px; padding-top: -30px;">
+                            <img  src="images/news%20daily.PNG" alt="news daily">
+                            <a href="http://pages.email.bbc.com/subscribe">Get news the BBC in yout inbox each weekday morning</a>
+
+                        </li>
+                        <li>
+                            <img src="images/newsapp.PNG" alt="news app">
+                            <a href="http://www.bbc.com/news/10628994"><br>Find out moore about our BBC News App</a>
+                        </li>
+                        <li>
+                            <address>
+                                <ul id="adress">
+                                    <li><p>Email us at <a href="mailto:haveyoursay@bbc.co.uk" >haveyoursay@bbc.co.uk</a></p></li>
+                                    <li><p>Send an SMS or MMS to <a href="sms:+447624800100" >+44 7624 800100</a></p> </li>
+                                    <li><p><a href="https://twitter.com/BBC_HaveYourSay"
+                                              class="gel-brevier-bold nw-o-link">Have Your Say on Twitter</a></p></li>
+                                    <li> <p><a href="http://www.bbc.co.uk/news/help-41670342" >Why you can trust BBC News</a></p></li>
+                                </ul>
+                            </address>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
         </div>
         <div class="clear"></div>
         <div id="footer1">
