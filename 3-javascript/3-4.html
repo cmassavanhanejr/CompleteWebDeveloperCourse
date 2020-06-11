@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Hello JS</title>
+</head>
+<body>
+    <p id="text">Hello world</p>
+    <button id="click">Change Text</button>
+    <p id="secondP"> JS ... </p>
+    <button id="secondB">AppendText</button>
+    <p  id="emptyP"></p>
+    <button id="thirdB">Add Text</button>
+    <script type="text/javascript">
+        document.getElementById("click").onclick= function () {
+            document.getElementById("text").innerHTML = "Hey CAMJr.";
+        };
+
+       document.getElementById("secondB").onclick=function(){ document.getElementById("secondP").innerHTML = "Im sure that" +document.getElementById("secondP").innerHTML + "awesome";}
+
+       document.getElementById("thirdB").onclick=function () {
+           document.getElementById("emptyP").innerHTML = "<h3>Becoming a WebDev!</h3>"
+
+       }
+
+
+    </script>
+</body>
+</html>
