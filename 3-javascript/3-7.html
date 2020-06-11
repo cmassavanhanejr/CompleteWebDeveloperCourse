@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Hello JS</title>
+    <style>
+        #blue_circle{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        #yellow_circle{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            border-radius: 50%;
+            margin: 10px;
+            display: inline-block;
+        }
+        button{
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            border-radius: 10%;
+
+            margin-right: 15%;
+            color: white;
+            font-size: medium;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="blue_circle"></div>
+    <div id="yellow_circle"></div>
+    <br>
+    <button id="hideB">Hide Blue</button> <button id="hideY">Hide Yellow</button>
+    <script type="text/javascript">
+        document.getElementById("hideB").onclick=function () {
+            document.getElementById("blue_circle").style.display="none";
+        }
+        document.getElementById("hideY").onclick=function () {
+            document.getElementById("yellow_circle").style.display="none";
+        }
+
+
+    </script>
+</body>
+</html>
