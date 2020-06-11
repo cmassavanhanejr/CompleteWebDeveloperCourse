@@ -1,3 +1,4 @@
+
 #top-bar{
     width: 1200px;
     margin:0 auto;
@@ -145,9 +146,10 @@ h2{
 }
 
 #main-article{
-    width: 505px;
-    height: 595px;
+    width: 490px; /*reduced */
+    /*height: 595px;  REMOVED*/
     float: left;
+    margin-right:10px; /*added */
 }
 
 h3 a{
@@ -163,8 +165,8 @@ h3 a:hover{
 
 #article-summary{
     color: darkgray;
-    width:505px;
-    height: 590px;
+    width:490px; /*reduced */
+    /* height: 590px; removed */
     float: left;
 }
 
@@ -207,11 +209,13 @@ h4 a{
 
 #assides-articles{
     width: 800px;
-    height: 590px;
-    position: relative;
+    /*height: 590px;
+    position: relative; removed*/
     float: left;
-    left: 505px;
-    top:-505px
+    /*left: 505px;
+    top:-505px*/
+    /* margin-top:70px; added (by Mark)*/
+     margin-top:65px; /*updated*/
 }
 
 #assides-articles ul{
@@ -225,8 +229,8 @@ h4 a{
     height: 280px;
     padding: 0;
     margin: 0;
-    position: relative;
-    top:-17px;
+    /*position: relative;
+    top:-17px;  removed*/
 }
 
 #article-container{
@@ -237,7 +241,7 @@ h4 a{
 
 .section-2{
     position: relative;
-    top: -420px;
+    /* top: -420px;*/
     width: 1300px;
     border-bottom: 1.2px solid #cccccc;
 }
@@ -264,7 +268,7 @@ h5{
 
 #arround-bbc{
     position: relative;
-    top: -420px;
+    /* top: -420px*/;
     width: 1300px;
     border-bottom: 1.2px solid #cccccc;
 }
@@ -362,7 +366,7 @@ h5{
 
 #find-us{
     position: relative;
-    top: -420px;
+    /*top: -420px;*/
     width: 1300px;
 
 
@@ -441,4 +445,3 @@ ul#explore-bbc, ul#explore-bbc ul{
     border-right: 1px solid white;
     width: 191px;
 }
-
