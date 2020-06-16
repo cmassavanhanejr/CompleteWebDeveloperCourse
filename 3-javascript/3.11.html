@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <p>How many fingers Im holding?</p>
+    <input type="text" id="txtFingers"/>
+    <button type="button" id="check">Check</button>
+    <script>
+        document.getElementById("check").onclick= function () {
+            var nr= document.getElementById("txtFingers").value;
+            var fingers = Math.floor(Math.random()*6);
+            if(nr == fingers){
+                alert('You are right, Im holding: ' + fingers + ' Fingers');
+            }else{
+                alert('You are wrong, Im holding: ' + fingers + ' Fingers');
+            }
+
+        }
+    </script>
+
+</body>
+</html>
