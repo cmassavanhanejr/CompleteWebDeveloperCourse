@@ -14,12 +14,19 @@
 
 <p>
     <select id="myNumber">
+
         <option>0</option>
+
         <option>1</option>
+
         <option>2</option>
+
         <option>3</option>
+
         <option>4</option>
+
         <option>5</option>
+
     </select>
 
     <button id="guess">Guess!</button>
@@ -27,6 +34,26 @@
 </p>
 
 <script type="text/javascript">
+
+    function doAGuess(correctAnswer) {
+
+        var guess = Math.random();
+
+        guess = guess * 6;
+
+        guess = Math.floor(guess);
+
+        if (guess == correctAnswer) {
+
+            return (true);
+
+        } else {
+
+            return(false);
+
+        }
+
+    }
 
     document.getElementById("guess").onclick = function() {
 
@@ -38,11 +65,11 @@
 
         while (gotIt == false) {
 
-            var guess = Math.floor(Math.random()*6);
-            if (guess == myNumber) {
+            if (doAGuess(myNumber) == true) {
 
                 gotIt = true;
-                alert ("Got it! It was a " + guess + ". It took me " + numberOfGuesses + " guesses.");
+
+                alert ("Got it! It was a " + myNumber + ". It took me " + numberOfGuesses + " guesses.");
 
             } else {
 
