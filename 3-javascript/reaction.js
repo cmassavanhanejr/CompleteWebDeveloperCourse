@@ -37,22 +37,24 @@ function appear(){
     randDim=getRndInteger(150, 400);
 
     var shapeType=getRndInteger(0, 1);
+    var shape=document.getElementById("shape");
 
     /*random the shape type*/
     if(shapeType==1){
-        document.getElementById("shape").style.borderRadius = "50%";
+        shape.style.borderRadius = "50%";
     }else{
-        document.getElementById("shape").style.borderRadius = "0%";
+        shape.style.borderRadius = "0%";
     }
 
-    document.getElementById("shape").style.display="block";
-    document.getElementById("shape").style.marginTop= randTop+"px";
-    document.getElementById("shape").style.marginBottom= randBottom+"px";
-    document.getElementById("shape").style.marginLeft= randLeft+"px";
-    document.getElementById("shape").style.marginRight= randRight+"px";
-    document.getElementById("shape").style.height= randDim+"px";
-    document.getElementById("shape").style.width= randDim+"px";
-    document.getElementById("shape").style.backgroundColor=generateRandomColor();
+
+    shape.style.display="block";
+    shape.style.marginTop= randTop+"px";
+    shape.style.marginBottom= randBottom+"px";
+    shape.style.marginLeft= randLeft+"px";
+    shape.style.marginRight= randRight+"px";
+    shape.style.height= randDim+"px";
+    shape.style.width= randDim+"px";
+    shape.style.backgroundColor=generateRandomColor();
 }
 
 document.getElementById("shape").onclick = function() {
