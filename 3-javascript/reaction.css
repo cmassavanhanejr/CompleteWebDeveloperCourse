@@ -1,0 +1,10 @@
+#shape
+{
+    height: 100px;
+    width: 100px;
+    background-color: #777777;
+    margin: 50px;
+}
+.bold{
+    font-weight: bold;
+}

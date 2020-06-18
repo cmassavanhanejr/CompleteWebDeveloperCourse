@@ -5,97 +5,21 @@
 <head>
 
     <title>TestReactions</title>
-    <style>
-        #shape
-        {
-            height: 100px;
-            width: 100px;
-            background-color: #777777;
-            margin: 50px;
-        }
-        #time{
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="reaction.css">
+
 </head>
 
 <body>
 
 <h1>Test your reactions!</h1>
 <p>Click on the boxes and circles as quickly as you can</p>
-<p><strong>Your time: </strong><span id="time"></span></p>
-<p><strong>Best time: </strong><span id="bestTime"></span></p>
+<p><strong>Your time: </strong><span class="bold" id="time"></span></p>
+<p><strong>Best time: </strong><span class="bold" id="bestTime"></span></p>
 
 <div id="shape"></div>
 
-<script type="text/javascript">
 
-    var startTime=new Date(), endTime, bestTime=100000000;
-
-    function disapear() {
-        document.getElementById("shape").style.display="none";
-        endTime = new Date();
-        var timeDiff = endTime - startTime; //in ms
-        // strip the ms
-        timeDiff /= 1000;
-
-        if(bestTime>timeDiff){
-            bestTime=timeDiff;
-        }
-        /* get seconds
-        var seconds = Math.round(timeDiff);*/
-        document.getElementById("time").innerHTML=timeDiff+"";
-        document.getElementById("bestTime").innerHTML=bestTime+"";
-    }
-
-    /*Random color generate*/
-    function generateRandomColor()
-    {
-        var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-        return randomColor;
-        //random color will be freshly served
-    }
-
-    function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) ) + min;
-    }
-
-    function appear(){
-        startTime = new Date();
-        var randTop=getRndInteger(15, 300);
-        var randRight=getRndInteger(0, 100);
-        var randLeft=getRndInteger(0,800);
-        var randBottom=getRndInteger(15,150);
-        randDim=getRndInteger(150, 400);
-
-        var shapeType=getRndInteger(0, 1);
-
-        /*random the shape type*/
-        if(shapeType==1){
-            document.getElementById("shape").style.borderRadius = "50%";
-        }else{
-            document.getElementById("shape").style.borderRadius = "0%";
-        }
-
-        document.getElementById("shape").style.display="block";
-        document.getElementById("shape").style.marginTop= randTop+"px";
-        document.getElementById("shape").style.marginBottom= randBottom+"px";
-        document.getElementById("shape").style.marginLeft= randLeft+"px";
-        document.getElementById("shape").style.marginRight= randRight+"px";
-        document.getElementById("shape").style.height= randDim+"px";
-        document.getElementById("shape").style.width= randDim+"px";
-        document.getElementById("shape").style.backgroundColor=generateRandomColor();
-    }
-
-    document.getElementById("shape").onclick = function() {
-        disapear();
-        appear();
-
-    }
-
-
-</script>
-
+<script type="text/javascript" src="reaction.js"></script>
 </body>
 
 </html>
