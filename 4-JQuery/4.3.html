@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <style>
+        #circle{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+    <script src="jquery-3.5.1.js" rel="script" type="text/javascript"></script>
+</head>
+<body>
+
+    <div id="circle"></div>
+    <p>This is some borring text.</p>
+
+    <iframe src="https://www.codestars.com/"></iframe>
+
+    <script>
+        $("#circle").click(function () {
+            alert($("p").html());
+            $("iframe").attr("src", "http://khuma.co.mz")
+        });
+        $("#circle").click(function () {
+            $("p").html("Hey jQuery is so cool");
+        });
+
+
+    </script>
+
+</body>
+</html>
