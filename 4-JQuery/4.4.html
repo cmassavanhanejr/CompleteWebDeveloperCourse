@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <style>
+        #circle{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .square{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            display: inline-block;
+        }
+    </style>
+    <script src="jquery-3.5.1.js" rel="script" type="text/javascript"></script>
+</head>
+<body>
+
+    <div id="circle"></div>
+    <div class="square"></div>
+    <script>
+        $("#circle").click(function () {
+            $("#circle").css("background-color","blue");
+        });
+        $("#circle").hover(function () {
+            //alert($("body").css("width"));
+        })
+
+        $("div").click(function () {
+            $(this).hide();
+
+        })
+
+    </script>
+
+</body>
+</html>
