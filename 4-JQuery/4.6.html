@@ -17,19 +17,61 @@
             background-color: red;
             display: inline-block;
         }
+        #fade-in{display: none}
     </style>
     <script src="jquery-3.5.1.js" rel="script" type="text/javascript"></script>
 </head>
 <body>
 
-    <div id="circle"></div>
+    <!--<div id="circle"></div>
     <div class="square"></div>
     <div class="square"></div>
-    <div class="square"></div>
+    <div class="square"></div>-->
+    <p >Some text</p>
+    <button id="togle">Togle Button</button>
+
     <script>
-       $("div").click(function () {
+      /* $("div").click(function () {
             $(this).fadeOut();
-       })
+       })*/
+      $("#togle").click(function () {
+            if($("p").css("display") == "none"){
+                $("p").fadeIn();
+            }else{
+                $("p").fadeOut();
+            }
+
+      })
+
+        /*
+        *Other solution
+        * var textShowing = true;
+
+            $("#toggle").click(function() {
+
+                if (textShowing) {
+
+                    $("#text").fadeOut(function() {
+
+                        textShowing = false;
+
+                    });
+
+                } else {
+
+                    $("#text").fadeIn(function() {
+
+                        textShowing = true;
+
+                    });
+
+                }
+
+            });
+
+        *
+        * */
+
 
     </script>
 
