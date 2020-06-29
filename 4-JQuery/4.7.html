@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <style>
+        #circle{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+    </style>
+    <script src="jquery-3.5.1.js" rel="script" type="text/javascript"></script>
+</head>
+<body>
+
+    <div id="circle"></div>
+    <script type="text/javascript">
+        $("#circle").click(function () {
+            $(this).animate({
+                width:"500px",
+                height:"500px",
+                marginLeft:"100px",
+                marginTop:"100px",
+            },3000,function () {
+                $(this).css("backgroundColor","#3B51A3")
+
+            })
+        })
+    </script>
+
+</body>
+</html>
