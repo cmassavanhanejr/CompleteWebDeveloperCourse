@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery ui</title>
+    <style>
+        #draggable { width: 150px; height: 150px; padding: 0.5em; }
+    </style>
+    <link href="jquery-ui/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js" type="text/javascript" rel="script"></script>
+</head>
+<body>
+
+    <input type="text" name="date" id="date">
+
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+    </div>
+    <script>
+        $( "#date" ).datepicker();
+
+        $( function() {
+            $( "#draggable" ).draggable();
+        } );
+    </script>
+
+</body>
+</html>
