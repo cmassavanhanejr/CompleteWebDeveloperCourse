@@ -1,0 +1,65 @@
+
+
+<html>
+
+<head>
+
+    <title>jQuery-widgets</title>
+
+    <link href="jquery-ui/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+    <script src="jquery-ui/external/jquery/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js" type="text/javascript" rel="script"></script>
+
+    <style type="text/css">
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>
+                <strong>SECTION 1: </strong> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+            </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>
+                <strong>SECTION 2: </strong> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+            </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>
+                <strong>SECTION 3: </strong> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <ul id="sortable">
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+    </ul>
+
+
+
+
+    <script type="text/javascript">
+    $( "#accordion" ).accordion();
+    $( "#sortable" ).sortable();
+    //$( "#sortable" ).disableSelection();
+</script>
+
+</body>
+
+</html>
