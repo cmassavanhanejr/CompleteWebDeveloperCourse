@@ -15,10 +15,20 @@
       var tweets = ["Hey there Im WebDeveloper;", "Im making a webdeveloper course at Udemy"];
        alert(tweets[1]);
 
+       //adding an item in the end of the array
       tweets.push("Back to work!");
 
-      tweets.splice(1, 1, "Cornflakes for breakfast!", "Num num");
+      //deleting an item
+      tweets.splice(0,1);
+      alert(tweets[1]);
 
+
+      //adding an item before the item nr 1
+      tweets.splice(1, 0, "Cornflakes for breakfast!", "Num num");
+
+
+      //replacing an item in some position
+      tweets.splice(1,1, "num num num num");
       console.log(tweets);
 
 
