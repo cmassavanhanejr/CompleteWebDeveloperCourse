@@ -56,7 +56,7 @@
             margin-left: 200px;
         }
 
-        #errorMessage {
+        .errorMessage {
 
             color: red;
             font-size: 90% !important;
@@ -79,23 +79,23 @@
 <body>
 
 <div id="wrapper">
-
+    <h2 style="text-align: center">Form Validation</h2>
     <div id="successMessage">You've done it! Congratulations.</div>
 
-    <div id="errorMessage"></div>
+    <div id="errorMessage" class="errorMessage"></div>
 
     <div class="form-element">
 
         <label for="email">Email</label>
         <input type="text" name="email" id="email" placeholder = "eg. yourname@gmail.com">
-
+        <div id="emailError" class="errorMessage"></div>
     </div>
 
     <div class="form-element">
 
         <label for="phone">Telephone</label>
         <input type="text" name="phone" id="phone" placeholder = "eg. 0123456789">
-
+        <div id="phoneError" class="errorMessage"></div>
     </div>
 
     <div class="form-element">
@@ -109,7 +109,7 @@
 
         <label for="passwordConfirm">Confirm Password</label>
         <input type="password" name="passwordConfirm" id="passwordConfirm">
-
+        <div id="passwordError" class="errorMessage"></div>
     </div>
 
     <div class="form-element">
@@ -132,20 +132,8 @@
 
     $("#submitButton").click(function() {
 
-        var errorMessage = "";
-        var fieldsMissing = "";
+        var errorMessage = "", emailError ="", phoneError = "", fieldsMissing = "", passwordError="";
 
-        if ($("#email").val() == "") {
-
-            fieldsMissing += "<br>Email";
-
-        }
-
-        if ($("#phone").val() == "") {
-
-            fieldsMissing += "<br>Telephone";
-
-        }
 
         if ($("#password").val() == "") {
 
@@ -166,31 +154,37 @@
         }
 
         if (isEmail($("#email").val()) == false) {
-
-            errorMessage += "<p>Your email address is not valid</p>";
-
+            emailError += "<p>Your email address is not valid</p>"
         }
+
 
         if ($.isNumeric($("#phone").val()) == false) {
 
-            errorMessage += "<p>Your phone number is not numeric</p>"
+            phoneError += "<p>Your phone number is not numeric</p>"
 
         }
+
 
         if ($("#password").val() != $("#passwordConfirm").val()) {
 
-            errorMessage += "<p>Your passwords don't match</p>";
+            passwordError += "<p>Your passwords don't match</p>";
 
         }
 
-        if (errorMessage != "") {
+        if (errorMessage != "" || passwordError!="" || phoneError!=="" || emailError!=="" ) {
 
             $("#errorMessage").html(errorMessage);
+            $("#emailError").html(emailError);
+            $("#phoneError").html(phoneError);
+            $("#passwordError").html(passwordError);
+
 
         } else {
 
             $("#successMessage").show();
             $("#errorMessage").hide();
+            $("#emailError").hide();
+            $("#phoneError").hide();
             $("input").val("");
 
         }
