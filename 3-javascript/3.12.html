@@ -16,14 +16,14 @@
     var tweetString = "";
 
     var tweets = ["Hi everyone!", "I love cornflakes!", "Night night :)", "Sweet dreams!"];
-
+    tweetString="<ol type='A'>";
     for (var i = 0; i < tweets.length; i++) {
 
-        tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+        tweetString = tweetString + "<li>" + tweets[i] + "</li>";
 
     }
-
-    document.getElementById("tweetDiv").innerHTML = tweetString;
+    tweetString=tweetString+"</ol>";
+    document.getElementById("tweetDiv").innerHTML =  tweetString;
 
 </script>
 
