@@ -1,6 +1,5 @@
-<?php
-php phpinfo(); 
-/*$name = "Carlos ";
+<?php 
+$name = "Carlos ";
 echo $name;
 
 $String1="<p>Bem-Vindo ao mundo";
@@ -16,6 +15,6 @@ echo "the result of the calculation is ".$calculation;
 $myBol=false;
 
 echo "<p>My boolean is ".myBol."</p>";
-*/
+
 
 ?>
