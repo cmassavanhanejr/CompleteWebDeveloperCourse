@@ -22,3 +22,7 @@
 .idea/php.xml
 
 .idea/sqldialects.xml
+
+6-php/.idea/dataSources.local.xml
+
+6-php/.idea/workspace.xml
