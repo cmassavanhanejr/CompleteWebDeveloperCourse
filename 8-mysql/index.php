@@ -4,8 +4,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $host = "localhost";
 $username  = "root";
-$password = "Carlos@310319#";
-$dbname = "webcourse";
+$password = "220321";
+$dbname = "db_users";
    //Creating a connection
    $link = mysqli_connect($host, $username, $password, $dbname);
     if(mysqli_connect_error()){

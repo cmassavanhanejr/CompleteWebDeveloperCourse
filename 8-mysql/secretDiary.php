@@ -14,11 +14,8 @@ if (array_key_exists("logout", $_GET)) {
 }
 
 if (array_key_exists("submit", $_POST)){
-
-    $sql = mysqli_connect("localhost","root","220321", "db_secretedi");
-    if(mysqli_connect_error()){
-        die("Database Connection Error");
-    }
+    $sql="";
+    include("connection.php");
     //print_r($_POST);
 
     if(!$_POST['email']){
@@ -77,53 +74,49 @@ if (array_key_exists("submit", $_POST)){
 
 ?>
 
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-</head>
-<body>
+<?php include("header.php"); ?>
 <div class="container">
     <div><?php echo $error;?></div>
     <h1>Secret Diary!</h1>
     <form method="post" id="signUpForm">
+        <p>Interested? Sign up now.</p>
         <fieldset class="form-group">
-            <input type="email" name="email" placeholder="email">
+            <input class="form-control" type="email" name="email" placeholder="email">
         </fieldset>
         <fieldset class="form-group">
-            <input type="password" name="password" placeholder="password">
+            <input class="form-control" type="password" name="password" placeholder="password">
         </fieldset>
-        <fieldset class="form-group">
-            <input type="hidden" name="signUp" value="0">
-            <input type="checkbox" name="stayLoggedIn" value=1>
-        </fieldset>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="stayLoggedIn" value=1> Stay logged in
+            </label>
+        </div>
         <fieldset class="form-group">
             <input class="btn btn-success" type="submit" name="submit" value="Sign Up!">
+            <input class="form-control" type="hidden" name="signUp" value="0">
         </fieldset>
+        <p><a class="toggleForms">Log in</a></p>
     </form>
     <form id="logInForm" method="post">
-        <input type="email" name="email" placeholder="Your Email">
-        <input type="password" name="password" placeholder="Password">
-        <input type="checkbox" name="stayLoggedIn" value=1>
-        <input type="hidden" name="signUp" value="0">
-        <input type="submit" name="submit" value="Log In!">
+        <p>Log in using your username and password.</p>
+        <fieldset class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Your Email">
+        </fieldset>
+        <fieldset class="form-group">
+            <input class="form-control"type="password" name="password" placeholder="Password">
+        </fieldset>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="stayLoggedIn" value=1> Stay logged in
+            </label>
+        </div>
+        <fieldset class="form-group">
+            <input type="hidden" name="signUp" value="0">
+            <input class="btn btn-success" type="submit" name="submit" value="Log In!">
+        </fieldset>
+        <p><a class="toggleForms">Sign up</a></p>
     </form>
 </div>
 
-<!-- Optional JavaScript; choose one of the two! -->
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
--->
-</body>
-</html>
+<?php include("footer.php"); ?>
 
